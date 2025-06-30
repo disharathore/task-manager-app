@@ -1,0 +1,34 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  background-color: #ffd6e8;
+  color: #d63384;
+  padding-top: 20px;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 1000;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.open {
+  width: 200px;
+}
+
+.menu-icon {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}

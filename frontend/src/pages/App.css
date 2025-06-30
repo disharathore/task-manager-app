@@ -1,0 +1,128 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-wrapper {
+  max-width: 750px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.dashboard-header p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+.dashboard-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content {
+  flex: 1;
+  padding-left: 80px;
+}
+
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffe6f0;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.2);
+  margin-bottom: 30px;
+}
+
+.task-form input {
+  padding: 12px;
+  border: 1px solid #ffcce0;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.task-form button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.task-form button:hover {
+  background-color: #ff85c1;
+}
+
+.task-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 15px;
+}
+
+.task-card {
+  background-color: #fffafc;
+  border: 1px solid #f2c9d9;
+  border-radius: 15px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(255, 192, 203, 0.2);
+  transition: 0.3s;
+}
+
+.task-card:hover {
+  background-color: #fff0f6;
+}
+
+.task-card strong {
+  font-size: 16px;
+  display: block;
+  color: #d63384;
+}
+
+.task-card p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.task-card button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.task-completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
